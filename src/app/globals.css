@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Cores quentes para app de comida */
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    
+    /* Laranja vibrante como cor primária */
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Amarelo suave como secundária */
+    --secondary: 43 96% 56%;
+    --secondary-foreground: 20 14.3% 4.1%;
+    
+    --muted: 43 30% 95%;
+    --muted-foreground: 20 5% 40%;
+    
+    /* Vermelho quente para destaque/fome */
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 20 13% 91%;
+    --input: 20 13% 91%;
+    --ring: 24 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 0 0% 95%;
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 0 0% 95%;
+    
+    /* Laranja mais suave no dark */
+    --primary: 24 90% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 43 80% 50%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 20 14.3% 10%;
+    --muted-foreground: 20 5% 64.9%;
+    
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 20 14.3% 15%;
+    --input: 20 14.3% 15%;
+    --ring: 24 90% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
